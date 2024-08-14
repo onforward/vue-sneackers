@@ -152,6 +152,7 @@ provide('isAuth', isAuth)
 </script>
 
 <template>
+  <SpeedInsights />
   <TheDrawer
     v-if="isDrawerOpen"
     :closeDrawer="closeDrawer"
