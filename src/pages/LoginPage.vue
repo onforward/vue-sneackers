@@ -47,7 +47,7 @@ const authorizeUser = async () => {
       @click="alertIsVisible = false"
     ></button>
   </div>
-  <form @submit.prevent="authorizeUser" v-if="!isLoading" class="w-50">
+  <form @submit.prevent="authorizeUser" v-if="!isLoading">
     <div class="form-floating mb-3">
       <input
         v-model="userEmail"
