@@ -50,7 +50,7 @@ const registerUser = async () => {
       @click="alertIsVisible = false"
     ></button>
   </div>
-  <form @submit.prevent="registerUser" v-if="!isLoading" class="w-50">
+  <form @submit.prevent="registerUser" v-if="!isLoading">
     <div class="form-floating mb-3">
       <input
         v-model="userName"
@@ -93,9 +93,5 @@ const registerUser = async () => {
 
 
 <style>
-@media screen and (max-width: 768px) {
-  input {
-    width: 100%;
-  }
-}
+
 </style>
