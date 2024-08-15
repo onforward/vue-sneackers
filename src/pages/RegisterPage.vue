@@ -90,3 +90,12 @@ const registerUser = async () => {
   </form>
   <AppLoader v-else />
 </template>
+
+
+<style>
+@media screen and (max-width: 768px) {
+  input {
+    width: 100%;
+  }
+}
+</style>
