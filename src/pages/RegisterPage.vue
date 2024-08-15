@@ -91,7 +91,4 @@ const registerUser = async () => {
   <AppLoader v-else />
 </template>
 
-
-<style>
-
-</style>
+<style></style>

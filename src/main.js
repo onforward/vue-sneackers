@@ -1,5 +1,5 @@
 import './assets/main.css'
-import { inject } from '@vercel/analytics';
+import { inject } from '@vercel/analytics'
 inject()
 import { createApp } from 'vue'
 import { autoAnimatePlugin } from '@formkit/auto-animate/vue'

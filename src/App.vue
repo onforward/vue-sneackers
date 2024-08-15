@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed, provide, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
-import { SpeedInsights } from '@vercel/speed-insights/vue';
+import { SpeedInsights } from '@vercel/speed-insights/vue'
 import TheDrawer from './components/TheDrawer.vue'
 import TheHeader from './components/TheHeader.vue'
 import axios from 'axios'
