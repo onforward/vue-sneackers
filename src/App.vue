@@ -169,7 +169,6 @@ provide('isAuth', isAuth)
       box-shadow:
         0 20px 25px -5px rgb(0 0 0 / 0.1),
         0 8px 10px -6px rgb(0 0 0 / 0.1);
-      width: 80%;
     "
   >
     <TheHeader @open-drawer="openDrawer" :totalPrice="totalPrice" :isDisabled="isDisabled" />
@@ -179,12 +178,18 @@ provide('isAuth', isAuth)
   </div>
 </template>
 
-<style>
+<style scoped>
+div {
+  width: 90%;
+}
 main {
   padding-inline: 1.25rem;
   padding-block: 0.75rem;
 }
 @media screen and (min-width: 768px) {
+  div {
+    width: 80%;
+  }
   main {
     padding-inline: 2.5rem;
     padding-block: 1.5rem;
