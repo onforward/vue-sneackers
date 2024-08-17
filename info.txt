@@ -1,1 +1,0 @@
-P.S. проект также задеплоил через Vercel: https://vue-sneakers-pearl.vercel.app

